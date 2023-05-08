@@ -47,9 +47,15 @@ final class UserFactory extends ModelFactory
     protected function getDefaults(): array
     {
         return [
-            'email' => self::faker()->text(180),
-            'password' => self::faker()->text(),
-            'roles' => [],
+            'email' => 'youssef@ycode.com',
+            'roles' => ['ROLE_ADMIN'],
+            'password' => '$2y$13$O49uTMyDxULI3fuzMSGdYehQJJslVlUwIzsXG5oge/7ExMnlEYz2O',
+            'username' => 'Admin',
+            'locale' => 'fr',
+            'is_verified' => 1
+            // 'email' => self::faker()->text(180),
+            // 'password' => self::faker()->text(),
+            // 'roles' => [],
         ];
     }
 

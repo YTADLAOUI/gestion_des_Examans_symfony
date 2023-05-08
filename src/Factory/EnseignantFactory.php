@@ -47,9 +47,9 @@ final class EnseignantFactory extends ModelFactory
     protected function getDefaults(): array
     {
         return [
-            'cni' => self::faker()->text(30),
-            'nom' => self::faker()->text(50),
-            'prenom' => self::faker()->text(59),
+            'cni' => self::faker()->realText(10),
+            'nom' => self::faker()->lastName(),
+            'prenom' => self::faker()->firstName(),
         ];
     }
 

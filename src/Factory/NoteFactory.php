@@ -47,10 +47,10 @@ final class NoteFactory extends ModelFactory
     protected function getDefaults(): array
     {
         return [
-            'etudiant' => null, // TODO add App\Entity\etudiant type manually
-            'module' => null, // TODO add App\Entity\module type manually
+            'etudiant' => EtudiantFactory::randomOrCreate(), // TODO add App\Entity\etudiant type manually
+            'module' => ModuleFactory::randomOrCreate(), // TODO add App\Entity\module type manually
             'note' => self::faker()->randomFloat(),
-            'observation' => self::faker()->text(255),
+            'observation' => self::faker()->realText(50),
         ];
     }
 

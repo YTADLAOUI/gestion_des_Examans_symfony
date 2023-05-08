@@ -47,8 +47,12 @@ final class EtudiantFactory extends ModelFactory
     protected function getDefaults(): array
     {
         return [
-            'cni' => self::faker()->text(59),
-            'nom' => self::faker()->text(50),
+            // 'cni' => self::faker()->text(59),
+            // 'nom' => self::faker()->text(50),
+            'nom' => self::faker()->lastname(),
+            'prenom' => self::faker()->firstname(),
+            'adresse' => self::faker()->address(),
+            'cni' => self::faker()->realtext(10),
         ];
     }
 

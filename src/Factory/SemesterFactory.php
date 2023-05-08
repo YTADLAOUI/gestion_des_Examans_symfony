@@ -47,7 +47,7 @@ final class SemesterFactory extends ModelFactory
     protected function getDefaults(): array
     {
         return [
-            'nom' => self::faker()->text(50),
+            'nom' => self::faker()->realtext(10),
         ];
     }
 

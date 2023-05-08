@@ -24,7 +24,7 @@ class AppFixtures extends Fixture
         SemesterFactory::createMany(6);
         ModuleFactory::createMany(23);
         NoteFactory::createMany(10);
-        UserFactory::createMany(10);
+        UserFactory::createMany(1);
         $manager->flush();
     }
 }
