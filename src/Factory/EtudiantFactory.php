@@ -51,7 +51,7 @@ final class EtudiantFactory extends ModelFactory
             // 'nom' => self::faker()->text(50),
             'nom' => self::faker()->lastname(),
             'prenom' => self::faker()->firstname(),
-            'adresse' => self::faker()->address(),
+            'address' => self::faker()->address(),
             'cni' => self::faker()->realtext(10),
         ];
     }

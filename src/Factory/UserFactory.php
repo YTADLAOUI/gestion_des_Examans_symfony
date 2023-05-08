@@ -51,8 +51,8 @@ final class UserFactory extends ModelFactory
             'roles' => ['ROLE_ADMIN'],
             'password' => '$2y$13$O49uTMyDxULI3fuzMSGdYehQJJslVlUwIzsXG5oge/7ExMnlEYz2O',
             'username' => 'Admin',
-            'locale' => 'fr',
-            'is_verified' => 1
+            'local' => 'fr',
+            'is_verfied' => 1
             // 'email' => self::faker()->text(180),
             // 'password' => self::faker()->text(),
             // 'roles' => [],
